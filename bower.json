@@ -1,0 +1,34 @@
+{
+  "name": "module-store",
+  "version": "0.0.0",
+  "authors": [
+    "Glen Pike <ski@dijitl.co.uk>"
+  ],
+  "description": "Simple example of Backbone & Marionette Application using AMD that uses Marionette Modules.  These Module can be unit tested in isolation from the App because we introduce a separation between App and App.module",
+  "main": "main.js",
+  "keywords": [
+    "Backbone",
+    "Marionette",
+    "RequireJS",
+    "modules"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/glenpike",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.7.0",
+    "jquery": "~2.1.1",
+    "backbone": "~1.1.2",
+    "marionette": "~2.2.2",
+    "requirejs": "~2.1.15"
+  },
+  "resolutions": {
+    "underscore": "~1.7.0"
+  }
+}
