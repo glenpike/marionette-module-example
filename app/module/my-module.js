@@ -1,14 +1,20 @@
+/* global define */
 define([
     'underscore',
+    'backbone',
     'marionette',
-    'common/module-store'
-], function(_, Marionette, ModuleStore) {
+    'common/module-store',
+    'text!module/template.html',
+    'text!module/item-template.html'
+], function(_, Backbone, Marionette, ModuleStore, template, itemTemplate) {
+
+    'use strict';
 
     var MyModule = ModuleStore.module('MyModule', function() {
         var myModule = this,
 
         ItemView = Marionette.ItemView.extend({
-            template: _.template($('#item-template').html()),
+            template: _.template(itemTemplate),
             tagName: 'li',
 
             trigger: {
@@ -17,7 +23,7 @@ define([
         }),
 
         CollectionView = Marionette.CompositeView.extend({
-            template: _.template($('#list-template').html()),
+            template: _.template(template),
             childView: ItemView,
             childViewContainer: 'ul.email-list',
 
@@ -56,7 +62,7 @@ define([
             console.log('on start');
             myModule.myView = new CollectionView({
                 collection: dummyCollection
-            })
+            });
         });
 
         myModule.on('stop', function() {

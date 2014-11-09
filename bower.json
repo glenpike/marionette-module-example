@@ -2,10 +2,10 @@
   "name": "module-store",
   "version": "0.0.0",
   "authors": [
-    "Glen Pike <ski@dijitl.co.uk>"
+    "Glen Pike"
   ],
   "description": "Simple example of Backbone & Marionette Application using AMD that uses Marionette Modules.  These Module can be unit tested in isolation from the App because we introduce a separation between App and App.module",
-  "main": "main.js",
+  "main": "app/main.js",
   "keywords": [
     "Backbone",
     "Marionette",
@@ -18,7 +18,6 @@
     "**/.*",
     "node_modules",
     "app/vendor",
-    "test",
     "tests"
   ],
   "dependencies": {
@@ -26,9 +25,15 @@
     "jquery": "~2.1.1",
     "backbone": "~1.1.2",
     "marionette": "~2.2.2",
-    "requirejs": "~2.1.15"
+    "requirejs": "~2.1.15",
+    "requirejs-text": "~2.0.12"
   },
   "resolutions": {
     "underscore": "~1.7.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.0.1",
+    "chai": "~1.9.2",
+    "chai-jquery": "~2.0.0"
   }
 }

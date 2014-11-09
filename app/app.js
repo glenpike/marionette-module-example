@@ -14,7 +14,7 @@ define([
 
 
     function startModule() {
-        require(['module-a/module'], function(Module) {
+        require(['module/my-module'], function(Module) {
             //We start it here
             Module.start();
 
