@@ -24,7 +24,9 @@ To view the unit tests, open tests/index.html in your browser.
 
 Instead of using Application.module to create our Marionette Module definitions
 (http://marionettejs.com/docs/marionette.module.html#basic-usage) an intermediary
-(/app/common/module-store.js) is used which allows us to separate development and
+(<a href="marionette-module-example
+/app/common/module-store.js">app/common/module-store.js</a>)
+is used which allows us to separate development and
 testing of modules.
 
 The use of RequireJS can compound problems with the Application dependency of
